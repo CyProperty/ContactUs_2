@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+@font-face {
+    font-family: samim;
+    src: url(Samim.ttf);
+}
+@font-face {
+    font-family: samim-bold;
+    src: url(Samim-Bold.ttf);
+}
+@font-face {
+    font-family: kalame;
+    src: url(Kalameh_Bold.ttf);
+}
+@font-face {
+    font-family: yekan;
+    src: url(Yekan.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */
+    background: url(background-jpg.jpg)center center no-repeat;
+    background-size: cover;
+}
+
+.sec_main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.sec_main .container{
+    position: relative;
+    width: 65vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(background-jpg.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.7);
+    transition: .2s;
+    z-index: 1;
+}
+
+.sec_main .container div{
+    height: 100%;
+}
+
+.sec_main .container div.form{
+    width: 40%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255,255,255,.0));
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    backdrop-filter: blur(15px);
+    padding: 7em 6em 7em 6em;
+    font-family: samim-bold;
+    text-align: center;
+}
+
+.sec_main .container div.form h2{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 1em;
+}
+
+hr{
+    margin-bottom: 2em;
+}
+
+.sec_main .container div.form form{
+    display: grid;
+}
+
+.sec_main .container div.form form input{
+    padding: 12px 20px;
+    border-radius: 100vw;
+    border: none;
+    outline: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(49, 49, 49, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5),
+    inset 4px 6px 10px black,
+    inset -2px -4px 5px rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 2em;
+    direction: rtl;
+    font-family: samim;
+    transition: .3s;
+}
+        .sec_main .container div.form form input::-webkit-input-placeholder{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .sec_main .container div.form form input:focus,
+        .sec_main .container div.form form input:active{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .sec_main .container div.form form input:hover{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+.sec_main .container div.form form textarea{
+    padding: 15px 20px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(49, 49, 49, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5),
+    inset 4px 6px 10px black,
+    inset -4px -4px 5px rgba(222, 222, 222, 0.2);
+    color: white;
+    font-size: 16px;
+    resize: none;
+    font-family: samim;
+    direction: rtl;
+    transition: .3s;
+}
+        .sec_main .container div.form form textarea::-webkit-input-placeholder{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .sec_main .container div.form form textarea:focus,
+        .sec_main .container div.form form textarea:active{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .sec_main .container div.form form textarea:hover{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+.sec_main .container div.form form button{
+    padding: 12px 20px;
+    border-radius: 100vw;
+    border: none;
+    outline: none;
+    background-color: #e47a00;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-top: 2em;
+    font-family: samim;
+    font-weight: bold;
+    transition: .4s;
+}
+        .sec_main .container div.form form button:hover{
+            background-color: rgb(255, 143, 15);
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px black;
+        }
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.sec_main .container div.form .socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.sec_main .container div.form .socialMedia .btn{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(0, 0, 0,.5);
+    border-radius: 50vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.sec_main .container div.form .socialMedia .btn:hover{
+    box-shadow: 0 0 20px black;
+}
+
+.sec_main .container div.form .socialMedia .btn svg{
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+
+/* ======================================CAPTION======================================== */
+
+.sec_main .container div.caption{
+    width: 60%;
+    padding: 15em 7em;
+    text-align: right;
+    font-family: kalame;
+}
+.sec_main .container div.caption h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.sec_main .container div.caption p{
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+/* ===================================LOGO====================================== */
+
+img{
+    position: absolute;
+    z-index: 5;
+    width: 100px;
+    right: 3em;
+    top: 3em;
+}
+
+
+/* ================================================================================================ */
+/* -------------------------------------------RESPONSIVE------------------------------------------ */
+/* ============================================================================================== */
+
+
+@media(max-width:1900px) {
+    body{
+        height: 100vh;
+        background: #1e1e1e;
+        background-size: auto;
+    }
+    .sec_main .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: auto;
+        border-radius: 0;
+        box-shadow: none;
+        /* background: #e47a00; */
+    }
+    .sec_main .container div{
+        width: 100%;
+        box-shadow: none;
+    }
+    .sec_main .container div.form{
+        position: relative;
+        top: 0;
+        height: 200px;
+        height: 400px;
+        width: 90%;
+        border-radius: 0;
+        padding: 2em 2em;
+        font-family: kalame;
+        text-align: right;
+        backdrop-filter: none;
+        background-size: cover;
+        /* border-top-left-radius: 30px;
+        border-top-right-radius: 30px; */
+        border-radius: 30px;
+        box-shadow: 0 0px 10px rgb(0, 0, 0);
+        font-family: 'Questrial', sans-serif;
+        overflow: hidden;
+        background: rgba(30, 30, 30, 0.5);
+    }
+
+    .sec_main .container div.form h2{
+        /* color: white;
+        font-size: 25px;
+        margin-bottom: 1em;
+        margin-left: 10px;
+        text-align: center;
+        font-family: kalame;
+        position: relative;
+        top: -5px; */
+        opacity: 0;
+        margin: 0;
+    }
+    hr{
+        opacity: 0;
+        margin: 0;
+    }
+
+    .sec_main .container div.form form input{
+        position: relative;
+        top: 0em;
+        margin-top: -2em;
+        box-shadow: inset 0 0 10px rgb(0, 0, 0);
+        backdrop-filter: blur(10px);
+    }
+
+    .sec_main .container div.form form textarea{
+        height: 80px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5),
+         4px 6px 10px black,
+         -2px -4px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    .sec_main .container div.form .socialMedia{
+        margin-top: 15px;
+    }
+    .sec_main .container div.form .socialMedia .btn{
+        width: 50px;
+        height: 50px;
+        background: #0c0c0c;
+    }
+
+
+    /* ==================== CAPTION ====================== */
+
+    .sec_main .container div.caption{
+        height: auto;
+        width: 100%;
+        /* background-color: aqua; */
+        box-shadow: none;
+        overflow: hidden;
+        padding: 3em 1em 4em 1em;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+    }
+    .sec_main .container div.caption h2{
+        font-size: 35px;
+        margin-left: .5em;
+    }
+    .sec_main .container div.caption p{
+        font-size: 18px;
+        line-height: 1.5em;
+        margin-left: 10px;
+
+    }
+    img{
+        position: absolute;
+        z-index: 5;
+        width: 60px;
+        right: 1.5em;
+        top: 2em;
+        
+    }
+}
